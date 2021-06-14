@@ -36,7 +36,7 @@ header div h1,
 
 .mobile-word-breaker {
   display: none;
-  @media (max-width: $screen-tablet) {
+  @media (max-width: $screen-small) {
     display: block;
   }
 }
@@ -49,8 +49,23 @@ header div h1,
 
 .icon0 {
   max-width: 30vw;
+  @media (max-width: $screen-tablet) {
+    max-width: 40vw;
+  }
 }
 
 div.icon0 {
   align-self: flex-end;
+}
+
+// top and bottom padding
+section#vision,
+section#value,
+section#work-info,
+section#mark,
+section#process {
+  @media (max-width: $screen-tablet) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }

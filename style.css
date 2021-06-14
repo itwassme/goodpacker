@@ -469,6 +469,12 @@ h1 {
     color: #fff;
   }
 }
+@media (max-width: 680px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
 
 h2 {
   font-size: 2rem;
@@ -586,13 +592,18 @@ body {
     padding-left: 2rem;
   }
 }
+@media (max-width: 768px) {
+  .vision {
+    padding-right: 0;
+  }
+}
 
 @media (max-width: 768px) {
   .value-section {
     height: 100%;
   }
   .value-section h3 {
-    padding-top: 4rem;
+    padding-top: 0;
     padding-bottom: 2rem;
   }
   .value-section .value {
@@ -726,6 +737,11 @@ body {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  #work-info .sticky {
+    padding: 0;
+  }
+}
 
 div.show-in-mobile {
   display: none;
@@ -756,6 +772,11 @@ div.show-in-mobile {
   }
   div.show-in-mobile div.work-info-texts p {
     margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  div.show-in-mobile div.work-info-mobile img {
+    margin-right: 1rem;
   }
 }
 
@@ -1105,7 +1126,7 @@ header div h1,
 .mobile-word-breaker {
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .mobile-word-breaker {
     display: block;
   }
@@ -1119,9 +1140,25 @@ header div h1,
 .icon0 {
   max-width: 30vw;
 }
+@media (max-width: 768px) {
+  .icon0 {
+    max-width: 40vw;
+  }
+}
 
 div.icon0 {
   align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  section#vision,
+section#value,
+section#work-info,
+section#mark,
+section#process {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -36,21 +36,16 @@ body {
   @media (max-width: $screen-medium) {
     padding-left: 2rem;
   }
+  @media (max-width: $screen-tablet) {
+    padding-right: 0;
+  }
 }
-
-// .vision {
-//   @media (min-width: $screen-tablet) {
-//     padding: 0;
-//   }
-// }
-
-// 굿패커 가치
 
 .value-section {
   @media (max-width: $screen-tablet) {
     height: 100%;
     h3 {
-      padding-top: 4rem;
+      padding-top: 0;
       padding-bottom: 2rem;
     }
     .value {
@@ -170,6 +165,11 @@ body {
       display: none;
     }
   }
+  @media (max-width: $screen-tablet) {
+    .sticky {
+      padding: 0;
+    }
+  }
 }
 
 div.show-in-mobile {
@@ -198,6 +198,11 @@ div.show-in-mobile {
       p {
         margin: 0;
       }
+    }
+  }
+  @media (max-width: $screen-tablet) {
+    div.work-info-mobile img {
+      margin-right: 1rem;
     }
   }
 }

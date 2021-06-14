@@ -1,0 +1,319 @@
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  line-height: 1.5;
+  font-weight: normal;
+
+  color: #282828;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight-bg {
+  background-color: $highlight-color;
+}
+
+.grey-bg {
+  background-color: $light-grey;
+}
+
+// 굿패커 비전
+.bg-left {
+  background-image: url(assets/image2.jpg);
+  background-position: center center;
+  background-size: cover;
+  @media (max-width: $screen-tablet) {
+    display: none;
+  }
+}
+
+.vision {
+  padding-right: 6rem;
+  padding-left: 6rem;
+  @media (max-width: $screen-large) {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  @media (max-width: $screen-medium) {
+    padding-left: 2rem;
+  }
+}
+
+// .vision {
+//   @media (min-width: $screen-tablet) {
+//     padding: 0;
+//   }
+// }
+
+// 굿패커 가치
+
+.value-section {
+  @media (max-width: $screen-tablet) {
+    height: 100%;
+    h3 {
+      padding-top: 4rem;
+      padding-bottom: 2rem;
+    }
+    .value {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.values {
+  padding-right: 16rem;
+  padding-left: 16rem;
+  @media (max-width: 1740px) {
+    padding-right: 12rem;
+    padding-left: 12rem;
+  }
+  @media (max-width: $screen-large) {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+  @media (max-width: 1240px) {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  @media (max-width: $screen-medium) {
+    padding: 0;
+  }
+  @media (max-width: $screen-tablet) {
+    flex-direction: column;
+  }
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-wrapper {
+  background-color: white;
+  height: 18vw;
+  width: 21vw;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  transition: all 0.2s ease;
+  img {
+    height: 100%;
+  }
+  @media (max-width: $screen-xlarge) {
+    height: 16vw;
+    width: 20vw;
+    padding: 3rem;
+  }
+  @media (max-width: $screen-large) {
+    height: 18vw;
+    width: 22vw;
+  }
+  @media (max-width: $screen-medium) {
+    padding: 2rem;
+    width: 25vw;
+    height: 18vw;
+  }
+  @media (max-width: $screen-tablet) {
+    width: 40vw;
+    height: 30vw;
+  }
+}
+
+.icon-wrapper:hover {
+  box-shadow: 14px 14px 32px rgba(20, 94, 107, 0.25);
+  transform: translate(-10px, -10px);
+}
+
+// 굿패커 작업 내용
+
+.bg-right {
+  height: 300vh;
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.bg-right {
+  background-image: url(assets/long-image.png);
+}
+
+.image4 {
+  background-image: url(assets/image4.jpg);
+}
+
+.image5 {
+  background-image: url(assets/image5.jpg);
+}
+
+.dividing-line {
+  border-bottom: solid $highlight-color 2px;
+}
+
+// 굿패커 작업내용 모바일 styles
+
+#work-info {
+  @media (max-width: $screen-medium) {
+    height: auto;
+    div {
+      width: 100%;
+    }
+    .sticky {
+      position: relative;
+      padding: 6rem 0;
+    }
+    .bg-right,
+    .change {
+      display: none;
+    }
+  }
+}
+
+div.show-in-mobile {
+  display: none;
+  @media (max-width: $screen-medium) {
+    display: block;
+    margin-top: 2rem;
+    div.work-info-mobile {
+      display: flex;
+      margin-bottom: 2rem;
+      align-items: center;
+      img {
+        width: 40vw;
+        margin-right: 2rem;
+        border-radius: 0.5rem;
+      }
+    }
+    div.work-info-texts {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        line-height: 1.2;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+/* 굿패커 인증마크 */
+h3.sticker-header {
+  margin-bottom: 6rem;
+  @media (max-width: $screen-medium) {
+    margin-bottom: 3rem;
+  }
+  @media (max-width: $screen-tablet) {
+    margin-bottom: 2rem;
+  }
+  @media (max-width: $screen-mobile) {
+    text-align: center;
+  }
+}
+
+.sticker-wrapper {
+  @media (max-width: $screen-mobile) {
+    flex-direction: column;
+    div {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+div.sticker img {
+  height: 50vh;
+  @media (max-width: $screen-large) {
+    height: 36vh;
+  }
+  @media (max-width: $screen-medium) {
+    height: 30vh;
+  }
+  @media (max-width: $screen-tablet) {
+    height: 24vh;
+  }
+}
+
+.sticker-copy h3 {
+  color: $headline-color !important;
+}
+
+// // progress bar
+// div.progress {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 0;
+//   height: 6px;
+//   z-index: 100;
+//   background-color: $highlight-color;
+// }
+
+// div.progress.blue {
+//   background-color: #fff;
+// }
+
+// sticky
+.sticky {
+  position: sticky;
+  top: 4px;
+  padding-top: 24vh;
+  padding-bottom: 24vh;
+  // background: red;
+}
+
+// circles
+.circle-wrapper {
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+}
+.circle {
+  border: 2px solid $highlight-color;
+  border-radius: 100%;
+  width: 200px;
+  display: flex;
+  height: 200px;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    margin: 0;
+    margin-top: 1rem;
+    line-height: 1;
+  }
+}
+
+// 함께하는 기업
+
+.logos {
+  img {
+    display: block;
+    width: auto;
+    height: 2.5rem;
+    @media (max-width: $screen-medium) {
+      height: 2rem;
+    }
+    @media (max-width: $screen-tablet) {
+      height: 1.6rem;
+    }
+  }
+  @media (max-width: $screen-mobile) {
+    flex-direction: column;
+    align-items: center;
+    img {
+      height: auto;
+      width: 10rem;
+      margin-bottom: 3rem;
+    }
+  }
+}

@@ -1,0 +1,141 @@
+// navigation styles
+div.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 0 3rem;
+  // background-color: rgba(0, 0, 0, 0);
+  transition: all 0.4s ease-in;
+  z-index: 20;
+  img {
+    text-align: left;
+    max-height: 4rem;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .logo {
+    width: 20%;
+    display: flex;
+  }
+  @media (max-width: $screen-large) {
+    img {
+      max-height: 3.5rem;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: $screen-medium) {
+    img {
+      min-width: 12rem;
+    }
+    a {
+      font-size: 12px;
+      margin-top: 1rem;
+    }
+  }
+  @media (max-width: $screen-tablet) {
+    padding: 0 2rem;
+    a.logo {
+      width: 50%;
+      margin: 0;
+    }
+    img {
+      width: 10rem;
+    }
+  }
+  @media (max-width: $screen-mobile) {
+    nav {
+      display: none;
+    }
+  }
+}
+
+.scrolled {
+  background-color: #fff;
+  height: 100px;
+  a {
+    color: $headline-color !important;
+  }
+}
+
+.navigation a:hover {
+  color: $highlight-color !important;
+}
+
+// header styles
+
+.header-right {
+  background-image: url(assets/image1_darker.jpg);
+  background-position: center center;
+  background-size: cover;
+  @media (max-width: $screen-medium) {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .header-left {
+    background-image: url(assets/image1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 65vh;
+  }
+}
+
+// footer styles
+footer a {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  @media (max-width: $screen-tablet) {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-details {
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+  @media (max-width: $screen-tablet) {
+    display: none;
+  }
+}
+
+@media (max-width: $screen-tablet) {
+  footer div {
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+.site-links {
+  @media (max-width: 960px) {
+    margin-right: 4rem;
+  }
+  @media (max-width: $screen-tablet) {
+    margin-right: 0;
+  }
+}
+
+footer div.bb {
+  @media (max-width: $screen-mobile) {
+    border: none;
+  }
+}

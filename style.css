@@ -594,7 +594,7 @@ body {
 }
 @media (max-width: 768px) {
   .vision {
-    padding-right: 0;
+    padding: 0;
   }
 }
 
@@ -915,6 +915,11 @@ div.navigation .logo {
     margin-top: 1rem;
   }
 }
+@media (max-width: 960px) {
+  div.navigation {
+    padding: 1rem 2rem 0 2rem;
+  }
+}
 @media (max-width: 768px) {
   div.navigation {
     padding: 0 2rem;
@@ -950,13 +955,13 @@ div.navigation .logo {
   background-position: center center;
   background-size: cover;
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header-right {
     display: none;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .header-left {
     background-image: url(assets/image1.jpg);
     background-position: center center;
@@ -1157,7 +1162,7 @@ header div h1,
 .mobile-word-breaker {
   display: none;
 }
-@media (max-width: 480px) {
+@media (max-width: 960px) {
   .mobile-word-breaker {
     display: block;
   }
@@ -1173,7 +1178,7 @@ header div h1,
 }
 @media (max-width: 768px) {
   .icon0 {
-    max-width: 40vw;
+    max-width: 32vw;
   }
 }
 
@@ -1181,14 +1186,93 @@ div.icon0 {
   align-self: flex-end;
 }
 
+.height-ratio-wrapper {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+}
 @media (max-width: 768px) {
-  section#vision,
-section#value,
-section#work-info,
-section#mark,
-section#process {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .height-ratio-wrapper {
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header.height-ratio-wrapper {
+    height: 40vh;
+  }
+}
+.height-ratio-object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .height-ratio-object {
+    top: auto;
+    right: auto;
+    position: relative;
+  }
+}
+
+.height-ratio-object-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .height-ratio-object-left {
+    width: 100%;
+    top: auto;
+    right: auto;
+    position: relative;
+  }
+}
+
+.height-ratio-object-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .height-ratio-object-right {
+    width: 100%;
+    top: auto;
+    right: auto;
+    position: relative;
+  }
+}
+
+.global-padding {
+  padding: 4rem;
+}
+@media (max-width: 1024px) {
+  .global-padding {
+    padding: 3rem 3rem 3rem 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #work-info {
+    padding: 3rem 3rem 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-global-padding {
+    padding: 3rem 3rem 3rem 2rem;
   }
 }
 

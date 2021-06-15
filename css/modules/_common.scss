@@ -36,7 +36,7 @@ header div h1,
 
 .mobile-word-breaker {
   display: none;
-  @media (max-width: $screen-small) {
+  @media (max-width: $screen-tachyon-large) {
     display: block;
   }
 }
@@ -50,7 +50,7 @@ header div h1,
 .icon0 {
   max-width: 30vw;
   @media (max-width: $screen-tablet) {
-    max-width: 40vw;
+    max-width: 32vw;
   }
 }
 
@@ -59,13 +59,102 @@ div.icon0 {
 }
 
 // top and bottom padding
-section#vision,
-section#value,
-section#work-info,
-section#mark,
-section#process {
+// section#vision,
+// section#value,
+// section#work-info,
+// section#mark,
+// section#process {
+//   @media (max-width: $screen-tablet) {
+//     padding-top: 4rem;
+//     padding-bottom: 4rem;
+//   }
+// }
+
+.height-ratio-wrapper {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
   @media (max-width: $screen-tablet) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    height: auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: $screen-tablet) {
+  header.height-ratio-wrapper {
+    height: 40vh;
+  }
+}
+
+.height-ratio-object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @media (max-width: $screen-tablet) {
+    top: auto;
+    right: auto;
+    position: relative;
+  }
+}
+
+.height-ratio-object-left {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  @media (max-width: $screen-tablet) {
+    width: 100%;
+    top: auto;
+    right: auto;
+    position: relative;
+  }
+}
+
+.height-ratio-object-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  @media (max-width: $screen-tablet) {
+    width: 100%;
+    top: auto;
+    right: auto;
+    position: relative;
+  }
+}
+
+.global-padding {
+  padding: 4rem;
+  @media (max-width: $screen-medium) {
+    padding: 3rem 3rem 3rem 2rem;
+  }
+}
+
+// .value-section {
+//   @media (max-width: $screen-medium) {
+//     .global-padding {
+//       padding: 0;
+//     }
+//   }
+// }
+
+// $screen-tablet: 768px 과 1024px 사이 padding이 필요
+#work-info {
+  @media (min-width: $screen-tablet) and (max-width: $screen-medium) {
+    padding: 3rem 3rem 3rem 2rem;
+  }
+}
+.mobile-global-padding {
+  @media (max-width: $screen-tablet) {
+    padding: 3rem 3rem 3rem 2rem;
   }
 }

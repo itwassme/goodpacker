@@ -45,6 +45,9 @@ div.navigation {
       margin-top: 1rem;
     }
   }
+  @media (max-width: $screen-tachyon-large) {
+    padding: 1rem 2rem 0 2rem;
+  }
   @media (max-width: $screen-tablet) {
     padding: 0 2rem;
     a.logo {
@@ -80,12 +83,12 @@ div.navigation {
   background-image: url(assets/image1_darker.jpg);
   background-position: center center;
   background-size: cover;
-  @media (max-width: $screen-medium) {
+  @media (max-width: $screen-tablet) {
     display: none;
   }
 }
 
-@media (max-width: $screen-medium) {
+@media (max-width: $screen-tablet) {
   .header-left {
     background-image: url(assets/image1.jpg);
     background-position: center center;

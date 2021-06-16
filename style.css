@@ -886,7 +886,8 @@ div.navigation {
 }
 div.navigation img {
   text-align: left;
-  max-height: 4rem;
+  max-height: 3.5rem;
+  margin-bottom: 0.8rem;
 }
 div.navigation a {
   text-decoration: none;

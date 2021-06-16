@@ -58,18 +58,6 @@ div.icon0 {
   align-self: flex-end;
 }
 
-// top and bottom padding
-// section#vision,
-// section#value,
-// section#work-info,
-// section#mark,
-// section#process {
-//   @media (max-width: $screen-tablet) {
-//     padding-top: 4rem;
-//     padding-bottom: 4rem;
-//   }
-// }
-
 .height-ratio-wrapper {
   height: 0;
   position: relative;
@@ -138,14 +126,6 @@ div.icon0 {
     padding: 3rem 3rem 3rem 2rem;
   }
 }
-
-// .value-section {
-//   @media (max-width: $screen-medium) {
-//     .global-padding {
-//       padding: 0;
-//     }
-//   }
-// }
 
 // $screen-tablet: 768px 과 1024px 사이 padding이 필요
 #work-info {

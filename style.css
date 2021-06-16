@@ -896,6 +896,7 @@ div.navigation a {
   font-size: 16px;
 }
 div.navigation .logo {
+  margin-top: 0;
   width: 20%;
   display: flex;
 }
@@ -941,7 +942,7 @@ div.navigation .logo {
 
 .scrolled {
   background-color: #fff;
-  height: 100px;
+  height: 100px !important;
 }
 .scrolled a {
   color: #1b1b1b !important;

@@ -73,6 +73,9 @@ div.navigation {
   a {
     color: $headline-color !important;
   }
+  @media (max-width: $screen-tachyon-large) {
+    height: 80px !important;
+  }
 }
 
 .navigation a:hover {

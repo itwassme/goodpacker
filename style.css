@@ -1046,6 +1046,48 @@ footer a:hover {
   }
 }
 
+.footer-details {
+  line-height: 1.8;
+  letter-spacing: 0.4px;
+}
+@media (max-width: 768px) {
+  .footer-details {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  footer div {
+    margin: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+img.ngo-logo {
+  width: 12rem;
+}
+
+.footer-border-bottom {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+@media (max-width: 768px) {
+  .footer-border-bottom {
+    border: none;
+  }
+}
+
+.footer-items {
+  min-width: 6.5rem;
+}
+
+@media (max-width: 768px) {
+  .collaboration-text {
+    max-width: 70%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
 @keyframes fadein {
   0% {
     opacity: 0;

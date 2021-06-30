@@ -102,6 +102,26 @@ div.navigation {
   }
 }
 
+div.hero-socials,
+div.hero-socials-mb {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+div.hero-socials-mb {
+  display: none;
+  img {
+    max-width: 2.5rem;
+  }
+  @media (max-width: $screen-tablet) {
+    display: block;
+    img {
+      max-width: 2rem;
+    }
+  }
+}
+
 // footer styles
 footer a {
   text-decoration: none;
@@ -165,7 +185,7 @@ footer div.bb {
 }
 
 img.ngo-logo {
-  width: 12rem;
+  width: 16rem;
 }
 
 .footer-border-bottom {

@@ -477,22 +477,22 @@ h1 {
 }
 
 .smaller-h1 {
-  font-size: 1.8vw;
+  font-size: 2.2vw;
 }
 @media (max-width: 1600px) {
   .smaller-h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 }
 @media (max-width: 1024px) {
   .smaller-h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     /* 40px */
   }
 }
 @media (max-width: 680px) {
   .smaller-h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -996,6 +996,28 @@ div.navigation .logo {
     height: 65vh;
   }
 }
+div.hero-socials,
+div.hero-socials-mb {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+div.hero-socials-mb {
+  display: none;
+}
+div.hero-socials-mb img {
+  max-width: 2.5rem;
+}
+@media (max-width: 768px) {
+  div.hero-socials-mb {
+    display: block;
+  }
+  div.hero-socials-mb img {
+    max-width: 2rem;
+  }
+}
+
 footer a {
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -1064,7 +1086,7 @@ footer a:hover {
   }
 }
 img.ngo-logo {
-  width: 12rem;
+  width: 16rem;
 }
 
 .footer-border-bottom {

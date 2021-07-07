@@ -1088,6 +1088,13 @@ footer a:hover {
 img.ngo-logo {
   width: 20rem;
 }
+@media (max-width: 768px) {
+  img.ngo-logo {
+    width: 12rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
 
 .footer-border-bottom {
   border-bottom-style: solid;
